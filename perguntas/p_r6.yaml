@@ -1,0 +1,32 @@
+- pergunta: Qual estilo de jogo mais combina com você no R6?
+  opcoes:
+    - texto: Gosto de ser o primeiro a entrar e pegar info
+      tags: [entry fragger, agressivo, reflexivo]
+    - texto: Prefiro controlar ângulos e jogar no tempo
+      tags: [posicionado, técnico, defensivo]
+    - texto: Gosto de mudar de função conforme a tática
+      tags: [versátil, adaptável, suporte]
+    - texto: Sou quem faz as calls e coordena a equipe
+      tags: [igl, estratégico, liderança]
+
+- pergunta: O que você mais valoriza durante uma partida?
+  opcoes:
+    - texto: Comunicação e disciplina tática
+      tags: [comunicativo, disciplinado, tático]
+    - texto: Flexibilidade e liberdade de movimentação
+      tags: [versátil, criativo, explorador]
+    - texto: Precisão nas trades e controle de mapa
+      tags: [preciso, técnico, posicionado]
+    - texto: Leitura de jogo e contra-ataques bem executados
+      tags: [estratégico, analítico, decisivo]
+
+- pergunta: Quando você assiste conteúdo de R6, o que mais te prende?
+  opcoes:
+    - texto: Táticas de ataque e defesa
+      tags: [tático, técnico, disciplinado]
+    - texto: Clutches ou rounds que viram no detalhe
+      tags: [clutch, frio, decisivo]
+    - texto: Jogadas criativas e setups diferentes
+      tags: [criativo, explorador, flexível]
+    - texto: Comunicação e trabalho em equipe
+      tags: [comunicativo, liderança, suporte]

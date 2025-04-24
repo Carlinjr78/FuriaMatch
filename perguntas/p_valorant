@@ -1,0 +1,32 @@
+- pergunta: Qual estilo de jogador mais te inspira no Valorant?
+  opcoes:
+    - texto: Aquele que faz jogadas de reflexo e clutch no 1x5
+      tags: [clutch, frio, decisivo]
+    - texto: O que comanda o time com estratégias e calls
+      tags: [igl, liderança, estratégico]
+    - texto: Quem é versátil e se adapta a qualquer função
+      tags: [versátil, suporte, adaptável]
+    - texto: O jogador confiante, agressivo e impactante
+      tags: [entry fragger, agressivo, confiante]
+
+- pergunta: Quando você joga, como prefere se posicionar na equipe?
+  opcoes:
+    - texto: Gosto de pegar todos de surpresa, sou agressivo
+      tags: [entry fragger, rápido, impulsivo]
+    - texto: Prefiro controlar e dar info, sou mais técnico
+      tags: [controlador, técnico, posicionado]
+    - texto: Me viro bem em qualquer função
+      tags: [versátil, flex, suporte]
+    - texto: Eu que faço as calls e penso a rodada
+      tags: [estratégico, igl, tático]
+
+- pergunta: Qual tipo de conteúdo de Valorant mais te prende?
+  opcoes:
+    - texto: Clutches insanos e jogadas de reação
+      tags: [clutch, emoção, decisivo]
+    - texto: VOD review e análises profundas
+      tags: [tático, analítico, estudioso]
+    - texto: Highlights e plays explosivas
+      tags: [agressivo, confiante, impactante]
+    - texto: Comandos de equipe e sinergia
+      tags: [igl, suporte, coordenação]

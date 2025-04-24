@@ -1,0 +1,32 @@
+- pergunta: Qual tipo de jogador de LoL mais te inspira?
+  opcoes:
+    - texto: O shotcaller que comanda a equipe
+      tags: [estratégico, liderança, comunicativo]
+    - texto: O que consegue fazer milagres no 1x5
+      tags: [clutch, mecânico, decisivo]
+    - texto: O suporte que mantém tudo sob controle
+      tags: [suporte, confiável, estável]
+    - texto: O laner criativo que muda o meta
+      tags: [criativo, ousado, inovador]
+
+- pergunta: Em qual dessas funções você se vê jogando?
+  opcoes:
+    - texto: Midlaner estratégico e versátil
+      tags: [versátil, analítico, controle de mapa]
+    - texto: Toplaner firme e resistente
+      tags: [defensivo, estável, tank]
+    - texto: ADC calculista e posicionado
+      tags: [preciso, técnico, ofensivo]
+    - texto: Suporte que faz a diferença sem aparecer
+      tags: [suporte, protetor, tático]
+
+- pergunta: O que mais prende sua atenção vendo uma partida?
+  opcoes:
+    - texto: Teamfights bem coordenadas
+      tags: [coordenação, estratégico, tático]
+    - texto: Jogadas mecânicas insanas
+      tags: [habilidoso, clutch, explosivo]
+    - texto: Comunicação e movimentação do time
+      tags: [comunicativo, suporte, liderança]
+    - texto: Builds criativas e picks inesperados
+      tags: [inovador, criativo, ousado]

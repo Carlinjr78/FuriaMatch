@@ -1,0 +1,32 @@
+- pergunta: Qual aspecto mais te chama atenção em um jogador de futebol?
+  opcoes:
+    - texto: Estilo e ousadia nas jogadas
+      tags: [criativo, ousado]
+    - texto: Alegria e improviso dentro de campo
+      tags: [divertido, criativo, espontâneo]
+    - texto: Firmeza na defesa e presença física
+      tags: [disciplinado, defensivo, firme]
+    - texto: Capacidade de pensar o jogo e liderar
+      tags: [estratégico, liderança, racional]
+
+- pergunta: Se você tivesse que descrever seu estilo de jogo, seria mais...
+  opcoes:
+    - texto: Moleque do futebol raiz, estilo e resenha
+      tags: [criativo, espontâneo, divertido]
+    - texto: Técnico e centrado, gosto de disciplina
+      tags: [técnico, disciplinado, defensivo]
+    - texto: Inteligente e observador, jogo com a cabeça
+      tags: [estratégico, racional, visão de jogo]
+    - texto: Intenso e explosivo, gosto de impacto
+      tags: [explosivo, impacto, confiante]
+
+- pergunta: Qual dessas atitudes você mais valoriza num time?
+  opcoes:
+    - texto: Entrosamento e jogo coletivo
+      tags: [coletivo, empático, apoio]
+    - texto: Personalidade forte e liderança
+      tags: [líder, decisivo, estratégico]
+    - texto: Criatividade e jogadas de efeito
+      tags: [criativo, ousado, estiloso]
+    - texto: Resiliência e segurança na zaga
+      tags: [confiável, firme, defensivo]
