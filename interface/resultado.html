@@ -1,3 +1,4 @@
+<!-- interface/resultado.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,28 +7,18 @@
   <title>Resultado - FURIA MATCH</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="fade-in">
+<body>
   <div class="result-container">
     <div class="result-content">
-      <h1>🔥 Seu Match FURIA 🔥</h1>
-      
-      <div class="personality">
-        <img src="assets/fallen.png" alt="Personalidade FURIA" id="personality-img">
-        <h2 id="personality-name">Fallen</h2>
-        <p id="personality-description">Você é estratégico, visionário e lidera com o coração.</p>
-      </div>
-
-      <div class="buttons">
-        <a href="index.html" class="btn-start">Jogar Novamente</a>
-      </div>
+      <h1>Carregando seu resultado...</h1>
     </div>
   </div>
 
   <script>
-    // Se quiser fazer dinâmico depois, aqui vai puxar o resultado real
     window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('fade-in');
     });
   </script>
+  <script src="../src/resultado.js"></script>
 </body>
 </html>

@@ -1,0 +1,783 @@
+{
+  "criadores_de_conteudo": [
+    {
+      "pergunta": "Qual tipo de conteúdo você mais consome nas redes?",
+      "opcoes": [
+        {
+          "texto": "Reacts, vídeos engraçados, cortes de live",
+          "tags": [
+            "humor",
+            "casual"
+          ]
+        },
+        {
+          "texto": "Bastidores, entrevistas, conteúdo de opinião",
+          "tags": [
+            "bastidores",
+            "analítico"
+          ]
+        },
+        {
+          "texto": "Conteúdo criativo e visual (edições, narrativas, etc)",
+          "tags": [
+            "criativo",
+            "storytelling"
+          ]
+        },
+        {
+          "texto": "Conversas profundas, críticas sociais, conteúdo nerd",
+          "tags": [
+            "crítica social",
+            "nerd",
+            "analítico"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Como você costuma reagir ao ver algo que te surpreende em um vídeo?",
+      "opcoes": [
+        {
+          "texto": "Dou risada e mando pros amigos",
+          "tags": [
+            "humor",
+            "comunicativo"
+          ]
+        },
+        {
+          "texto": "Paro e reflito sobre o que foi dito",
+          "tags": [
+            "analítico",
+            "crítico"
+          ]
+        },
+        {
+          "texto": "Vejo várias vezes pra entender como foi feito",
+          "tags": [
+            "técnico",
+            "curioso"
+          ]
+        },
+        {
+          "texto": "Comento com uma opinião forte",
+          "tags": [
+            "autêntico",
+            "opinativo"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Se você fosse criador de conteúdo, como seria seu canal?",
+      "opcoes": [
+        {
+          "texto": "Engraçado e leve, com zoeiras e resenhas",
+          "tags": [
+            "humor",
+            "casual"
+          ]
+        },
+        {
+          "texto": "Bastidores, bastidores e mais bastidores",
+          "tags": [
+            "bastidores",
+            "comunicativo"
+          ]
+        },
+        {
+          "texto": "Uma mistura de criatividade, edição e performance",
+          "tags": [
+            "criativo",
+            "storytelling",
+            "versátil"
+          ]
+        },
+        {
+          "texto": "Conteúdo inteligente, provocador, com temas sérios",
+          "tags": [
+            "crítico",
+            "nerd",
+            "analítico"
+          ]
+        }
+      ]
+    }
+  ],
+  "cs": [
+    {
+      "pergunta": "Qual tipo de jogador de CS mais te representa?",
+      "opcoes": [
+        {
+          "texto": "O IGL que coordena a equipe com calma",
+          "tags": [
+            "igl",
+            "estratégico",
+            "liderança"
+          ]
+        },
+        {
+          "texto": "O rifler consistente que não erra uma",
+          "tags": [
+            "preciso",
+            "técnico",
+            "confiável"
+          ]
+        },
+        {
+          "texto": "O entry fragger agressivo que abre o bomb",
+          "tags": [
+            "entry fragger",
+            "confiante",
+            "impacto"
+          ]
+        },
+        {
+          "texto": "O cara do clutch que vira round perdido",
+          "tags": [
+            "clutch",
+            "frio",
+            "decisivo"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Como você se comporta em jogos competitivos?",
+      "opcoes": [
+        {
+          "texto": "Sou quem faz as calls e pensa o round",
+          "tags": [
+            "igl",
+            "tático",
+            "calmo"
+          ]
+        },
+        {
+          "texto": "Prefiro jogar quieto e resolver no skill",
+          "tags": [
+            "técnico",
+            "clutch",
+            "silencioso"
+          ]
+        },
+        {
+          "texto": "Dou a cara mesmo, tenho reflexo e coragem",
+          "tags": [
+            "impulsivo",
+            "agressivo",
+            "confiante"
+          ]
+        },
+        {
+          "texto": "Adapto meu estilo conforme a necessidade do time",
+          "tags": [
+            "versátil",
+            "suporte",
+            "flex"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "O que mais te prende em um highlight de CS?",
+      "opcoes": [
+        {
+          "texto": "Estratégia e trabalho em equipe",
+          "tags": [
+            "estratégico",
+            "coletivo",
+            "tático"
+          ]
+        },
+        {
+          "texto": "Flicks absurdos e bala na cabeça",
+          "tags": [
+            "mecânico",
+            "preciso",
+            "explosivo"
+          ]
+        },
+        {
+          "texto": "Jogadas de sangue frio no clutch",
+          "tags": [
+            "frio",
+            "decisivo",
+            "clutch"
+          ]
+        },
+        {
+          "texto": "Rounds virados com comunicação perfeita",
+          "tags": [
+            "coordenação",
+            "liderança",
+            "suporte"
+          ]
+        }
+      ]
+    }
+  ],
+  "futebol": [
+    {
+      "pergunta": "Qual aspecto mais te chama atenção em um jogador de futebol?",
+      "opcoes": [
+        {
+          "texto": "Estilo e ousadia nas jogadas",
+          "tags": [
+            "criativo",
+            "ousado"
+          ]
+        },
+        {
+          "texto": "Alegria e improviso dentro de campo",
+          "tags": [
+            "divertido",
+            "criativo",
+            "espontâneo"
+          ]
+        },
+        {
+          "texto": "Firmeza na defesa e presença física",
+          "tags": [
+            "disciplinado",
+            "defensivo",
+            "firme"
+          ]
+        },
+        {
+          "texto": "Capacidade de pensar o jogo e liderar",
+          "tags": [
+            "estratégico",
+            "liderança",
+            "racional"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Se você tivesse que descrever seu estilo de jogo, seria mais...",
+      "opcoes": [
+        {
+          "texto": "Moleque do futebol raiz, estilo e resenha",
+          "tags": [
+            "criativo",
+            "espontâneo",
+            "divertido"
+          ]
+        },
+        {
+          "texto": "Técnico e centrado, gosto de disciplina",
+          "tags": [
+            "técnico",
+            "disciplinado",
+            "defensivo"
+          ]
+        },
+        {
+          "texto": "Inteligente e observador, jogo com a cabeça",
+          "tags": [
+            "estratégico",
+            "racional",
+            "visão de jogo"
+          ]
+        },
+        {
+          "texto": "Intenso e explosivo, gosto de impacto",
+          "tags": [
+            "explosivo",
+            "impacto",
+            "confiante"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual dessas atitudes você mais valoriza num time?",
+      "opcoes": [
+        {
+          "texto": "Entrosamento e jogo coletivo",
+          "tags": [
+            "coletivo",
+            "empático",
+            "apoio"
+          ]
+        },
+        {
+          "texto": "Personalidade forte e liderança",
+          "tags": [
+            "líder",
+            "decisivo",
+            "estratégico"
+          ]
+        },
+        {
+          "texto": "Criatividade e jogadas de efeito",
+          "tags": [
+            "criativo",
+            "ousado",
+            "estiloso"
+          ]
+        },
+        {
+          "texto": "Resiliência e segurança na zaga",
+          "tags": [
+            "confiável",
+            "firme",
+            "defensivo"
+          ]
+        }
+      ]
+    }
+  ],
+  "lol": [
+    {
+      "pergunta": "Qual tipo de jogador de LoL mais te inspira?",
+      "opcoes": [
+        {
+          "texto": "O shotcaller que comanda a equipe",
+          "tags": [
+            "estratégico",
+            "liderança",
+            "comunicativo"
+          ]
+        },
+        {
+          "texto": "O que consegue fazer milagres no 1x5",
+          "tags": [
+            "clutch",
+            "mecânico",
+            "decisivo"
+          ]
+        },
+        {
+          "texto": "O suporte que mantém tudo sob controle",
+          "tags": [
+            "suporte",
+            "confiável",
+            "estável"
+          ]
+        },
+        {
+          "texto": "O laner criativo que muda o meta",
+          "tags": [
+            "criativo",
+            "ousado",
+            "inovador"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Em qual dessas funções você se vê jogando?",
+      "opcoes": [
+        {
+          "texto": "Midlaner estratégico e versátil",
+          "tags": [
+            "versátil",
+            "analítico",
+            "controle de mapa"
+          ]
+        },
+        {
+          "texto": "Toplaner firme e resistente",
+          "tags": [
+            "defensivo",
+            "estável",
+            "tank"
+          ]
+        },
+        {
+          "texto": "ADC calculista e posicionado",
+          "tags": [
+            "preciso",
+            "técnico",
+            "ofensivo"
+          ]
+        },
+        {
+          "texto": "Suporte que faz a diferença sem aparecer",
+          "tags": [
+            "suporte",
+            "protetor",
+            "tático"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "O que mais prende sua atenção vendo uma partida?",
+      "opcoes": [
+        {
+          "texto": "Teamfights bem coordenadas",
+          "tags": [
+            "coordenação",
+            "estratégico",
+            "tático"
+          ]
+        },
+        {
+          "texto": "Jogadas mecânicas insanas",
+          "tags": [
+            "habilidoso",
+            "clutch",
+            "explosivo"
+          ]
+        },
+        {
+          "texto": "Comunicação e movimentação do time",
+          "tags": [
+            "comunicativo",
+            "suporte",
+            "liderança"
+          ]
+        },
+        {
+          "texto": "Builds criativas e picks inesperados",
+          "tags": [
+            "inovador",
+            "criativo",
+            "ousado"
+          ]
+        }
+      ]
+    }
+  ],
+  "porsche_cup": [
+    {
+      "pergunta": "O que mais te chama atenção em um piloto?",
+      "opcoes": [
+        {
+          "texto": "Estilo e personalidade dentro e fora das pistas",
+          "tags": [
+            "ousado",
+            "estiloso",
+            "carismático"
+          ]
+        },
+        {
+          "texto": "Foco, constância e disciplina",
+          "tags": [
+            "disciplinado",
+            "técnico",
+            "preciso"
+          ]
+        },
+        {
+          "texto": "Estratégia de corrida e controle de ritmo",
+          "tags": [
+            "estratégico",
+            "analítico",
+            "controlador"
+          ]
+        },
+        {
+          "texto": "Emoção, ultrapassagens e momentos de impacto",
+          "tags": [
+            "emocionante",
+            "agressivo",
+            "instintivo"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Se você pilotasse, qual seria seu perfil?",
+      "opcoes": [
+        {
+          "texto": "Sou showman, gosto de chamar atenção",
+          "tags": [
+            "estiloso",
+            "ousado",
+            "midiático"
+          ]
+        },
+        {
+          "texto": "Prefiro ser preciso e discreto",
+          "tags": [
+            "técnico",
+            "silencioso",
+            "disciplinado"
+          ]
+        },
+        {
+          "texto": "Tomo decisões frias e penso a corrida",
+          "tags": [
+            "estratégico",
+            "racional",
+            "calculista"
+          ]
+        },
+        {
+          "texto": "Acelero mesmo, gosto da adrenalina",
+          "tags": [
+            "impulsivo",
+            "rápido",
+            "emocionante"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "O que mais te prende assistindo uma corrida?",
+      "opcoes": [
+        {
+          "texto": "Disputas intensas e ultrapassagens de risco",
+          "tags": [
+            "instintivo",
+            "agressivo",
+            "emocionante"
+          ]
+        },
+        {
+          "texto": "Como o piloto lida com a pressão",
+          "tags": [
+            "frio",
+            "resiliente",
+            "racional"
+          ]
+        },
+        {
+          "texto": "O estilo e carisma dos pilotos",
+          "tags": [
+            "carismático",
+            "ousado",
+            "midiático"
+          ]
+        },
+        {
+          "texto": "Estratégias e tempo de pit stop",
+          "tags": [
+            "estratégico",
+            "técnico",
+            "controlado"
+          ]
+        }
+      ]
+    }
+  ],
+  "r6": [
+    {
+      "pergunta": "Qual estilo de jogo mais combina com você no R6?",
+      "opcoes": [
+        {
+          "texto": "Gosto de ser o primeiro a entrar e pegar info",
+          "tags": [
+            "entry fragger",
+            "agressivo",
+            "reflexivo"
+          ]
+        },
+        {
+          "texto": "Prefiro controlar ângulos e jogar no tempo",
+          "tags": [
+            "posicionado",
+            "técnico",
+            "defensivo"
+          ]
+        },
+        {
+          "texto": "Gosto de mudar de função conforme a tática",
+          "tags": [
+            "versátil",
+            "adaptável",
+            "suporte"
+          ]
+        },
+        {
+          "texto": "Sou quem faz as calls e coordena a equipe",
+          "tags": [
+            "igl",
+            "estratégico",
+            "liderança"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "O que você mais valoriza durante uma partida?",
+      "opcoes": [
+        {
+          "texto": "Comunicação e disciplina tática",
+          "tags": [
+            "comunicativo",
+            "disciplinado",
+            "tático"
+          ]
+        },
+        {
+          "texto": "Flexibilidade e liberdade de movimentação",
+          "tags": [
+            "versátil",
+            "criativo",
+            "explorador"
+          ]
+        },
+        {
+          "texto": "Precisão nas trades e controle de mapa",
+          "tags": [
+            "preciso",
+            "técnico",
+            "posicionado"
+          ]
+        },
+        {
+          "texto": "Leitura de jogo e contra-ataques bem executados",
+          "tags": [
+            "estratégico",
+            "analítico",
+            "decisivo"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Quando você assiste conteúdo de R6, o que mais te prende?",
+      "opcoes": [
+        {
+          "texto": "Táticas de ataque e defesa",
+          "tags": [
+            "tático",
+            "técnico",
+            "disciplinado"
+          ]
+        },
+        {
+          "texto": "Clutches ou rounds que viram no detalhe",
+          "tags": [
+            "clutch",
+            "frio",
+            "decisivo"
+          ]
+        },
+        {
+          "texto": "Jogadas criativas e setups diferentes",
+          "tags": [
+            "criativo",
+            "explorador",
+            "flexível"
+          ]
+        },
+        {
+          "texto": "Comunicação e trabalho em equipe",
+          "tags": [
+            "comunicativo",
+            "liderança",
+            "suporte"
+          ]
+        }
+      ]
+    }
+  ],
+  "valorant": [
+    {
+      "pergunta": "Qual estilo de jogador mais te inspira no Valorant?",
+      "opcoes": [
+        {
+          "texto": "Aquele que faz jogadas de reflexo e clutch no 1x5",
+          "tags": [
+            "clutch",
+            "frio",
+            "decisivo"
+          ]
+        },
+        {
+          "texto": "O que comanda o time com estratégias e calls",
+          "tags": [
+            "igl",
+            "liderança",
+            "estratégico"
+          ]
+        },
+        {
+          "texto": "Quem é versátil e se adapta a qualquer função",
+          "tags": [
+            "versátil",
+            "suporte",
+            "adaptável"
+          ]
+        },
+        {
+          "texto": "O jogador confiante, agressivo e impactante",
+          "tags": [
+            "entry fragger",
+            "agressivo",
+            "confiante"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Quando você joga, como prefere se posicionar na equipe?",
+      "opcoes": [
+        {
+          "texto": "Gosto de pegar todos de surpresa, sou agressivo",
+          "tags": [
+            "entry fragger",
+            "rápido",
+            "impulsivo"
+          ]
+        },
+        {
+          "texto": "Prefiro controlar e dar info, sou mais técnico",
+          "tags": [
+            "controlador",
+            "técnico",
+            "posicionado"
+          ]
+        },
+        {
+          "texto": "Me viro bem em qualquer função",
+          "tags": [
+            "versátil",
+            "flex",
+            "suporte"
+          ]
+        },
+        {
+          "texto": "Eu que faço as calls e penso a rodada",
+          "tags": [
+            "estratégico",
+            "igl",
+            "tático"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual tipo de conteúdo de Valorant mais te prende?",
+      "opcoes": [
+        {
+          "texto": "Clutches insanos e jogadas de reação",
+          "tags": [
+            "clutch",
+            "emoção",
+            "decisivo"
+          ]
+        },
+        {
+          "texto": "VOD review e análises profundas",
+          "tags": [
+            "tático",
+            "analítico",
+            "estudioso"
+          ]
+        },
+        {
+          "texto": "Highlights e plays explosivas",
+          "tags": [
+            "agressivo",
+            "confiante",
+            "impactante"
+          ]
+        },
+        {
+          "texto": "Comandos de equipe e sinergia",
+          "tags": [
+            "igl",
+            "suporte",
+            "coordenação"
+          ]
+        }
+      ]
+    }
+  ]
+}
