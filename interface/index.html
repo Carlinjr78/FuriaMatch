@@ -13,9 +13,16 @@
       <!-- A imagem será aplicada via CSS -->
     </div>
     <div class="content-side">
-      <h1 class="home-title">DESCUBRA<br>QUEM VOCÊ É<br>NO UNIVERSO<br> FURIA</h1>
+      
+      <!-- 🔊 Botão de ouvir (AGORA ANTES DO TÍTULO) -->
+      <button class="btn-audio" onclick="falarIntro()">🔊 Ouvir Introdução</button>
 
-      <p>Conecte seu perfil e comece a jornada.</p>
+      <h1 class="home-title" id="titulo-intro">
+        DESCUBRA<br>QUEM VOCÊ É<br>NO UNIVERSO<br> FURIA
+      </h1>
+
+      <p id="intro-text">Conecte seu perfil e comece a jornada.</p>
+
       <input id="handle-input" type="text" placeholder="@seu_usuario">
       <button class="btn-start" id="start-button">COMEÇAR AGORA</button>
     </div>
@@ -25,7 +32,24 @@
     window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('fade-in');
     });
+
+    // 🔊 Função de Text-to-Speech (Intro Completa)
+    function falarIntro() {
+      if ('speechSynthesis' in window) {
+        speechSynthesis.cancel(); // Cancela qualquer fala anterior
+        const titulo = document.getElementById('titulo-intro').innerText;
+        const intro = document.getElementById('intro-text').innerText;
+        const textoCompleto = titulo + ". " + intro; // Junta tudo com pausa
+        const utterance = new SpeechSynthesisUtterance(textoCompleto);
+        utterance.lang = 'pt-BR';
+        utterance.rate = 1;
+        speechSynthesis.speak(utterance);
+      } else {
+        alert('Seu navegador não suporta leitura de texto.');
+      }
+    }
   </script>
+
   <script src="../src/script.js"></script>
 </body>
 </html>

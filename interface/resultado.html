@@ -17,8 +17,14 @@
 
     <!-- Lado do Conteúdo -->
     <div class="content-side">
-      <h1 id="nome-personalidade">Carregando...</h1> <!-- 👈 Agora o nome sozinho em destaque -->
-      <p id="descricao-personalidade">Carregando descrição...</p>
+
+      <!-- 🔊 Botões de Acessibilidade (apenas no conteúdo) -->
+      <button class="btn-audio" id="btn-ouvir-resultado" onclick="falarResultado()" style="display: none;">🔊 Ouvir Resultado</button>
+      <button class="btn-audio" id="btn-parar-leitura" onclick="pararLeitura()" style="display: none;">⏹️ Parar Leitura</button>
+
+      <!-- Conteúdo -->
+      <h1 id="nome-personalidade">Carregando...</h1> <!-- Nome -->
+      <p id="descricao-personalidade">Carregando descrição...</p> <!-- Descrição -->
 
       <!-- Redes Sociais -->
       <div id="social-section" style="display: none;">
@@ -31,14 +37,59 @@
         <a href="index.html" class="btn-start">Jogar Novamente</a>
         <a id="compartilhar-btn" href="#" class="btn-start">Compartilhar no X</a>
       </div>
+
     </div>
   </div>
 
   <script src="../src/resultado.js"></script>
+
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('fade-in');
+      document.getElementById('btn-ouvir-resultado').style.display = 'inline-block';
     });
+
+    // Função para falar resultado
+    function falarResultado() {
+      if ('speechSynthesis' in window) {
+        speechSynthesis.cancel();
+
+        const nome = document.getElementById('nome-personalidade').innerText;
+        const descricao = document.getElementById('descricao-personalidade').innerText;
+
+        let textoCompleto = "Você é: " + nome + ". " + descricao;
+
+        const utterance = new SpeechSynthesisUtterance(textoCompleto);
+        utterance.lang = 'pt-BR';
+        utterance.rate = 1;
+
+        const botaoOuvir = document.getElementById('btn-ouvir-resultado');
+        const botaoParar = document.getElementById('btn-parar-leitura');
+
+        botaoOuvir.classList.add('piscando');
+        botaoParar.style.display = 'inline-block';
+
+        utterance.onend = () => {
+          botaoOuvir.classList.remove('piscando');
+          botaoParar.style.display = 'none';
+        };
+
+        speechSynthesis.speak(utterance);
+      } else {
+        alert('Seu navegador não suporta leitura de texto.');
+      }
+    }
+
+    // Função para parar leitura
+    function pararLeitura() {
+      if ('speechSynthesis' in window) {
+        speechSynthesis.cancel();
+        const botaoOuvir = document.getElementById('btn-ouvir-resultado');
+        const botaoParar = document.getElementById('btn-parar-leitura');
+        botaoOuvir.classList.remove('piscando');
+        botaoParar.style.display = 'none';
+      }
+    }
   </script>
 </body>
 </html>

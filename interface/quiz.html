@@ -10,7 +10,12 @@
 <body>
   <div class="quiz-container">
     <div class="quiz-content">
-      <h2>Carregando perguntas...</h2>
+      <!-- Botões de Áudio -->
+      <button class="btn-audio" id="btn-ouvir-pergunta" onclick="falarPergunta()" style="display: none;">🔊 Ouvir Pergunta</button>
+      <button class="btn-audio" id="btn-parar-leitura" onclick="pararLeitura()" style="display: none;">⏹️ Parar Leitura</button>
+
+      <!-- Pergunta -->
+      <h2 id="texto-pergunta">Carregando perguntas...</h2>
     </div>
   </div>
 
@@ -19,6 +24,8 @@
       document.body.classList.add('fade-in');
     });
   </script>
+
+  <!-- Script principal -->
   <script src="../src/quiz.js"></script>
 </body>
 </html>

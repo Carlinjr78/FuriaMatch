@@ -65,9 +65,6 @@ let respostasTags = [];
 
 // Mostrar pergunta atual
 function mostrarPergunta() {
-  const quizContainer = document.querySelector('.quiz-content');
-  quizContainer.innerHTML = '';
-
   if (perguntaAtual >= perguntas.length) {
     finalizarQuiz();
     return;
@@ -75,9 +72,24 @@ function mostrarPergunta() {
 
   const pergunta = perguntas[perguntaAtual];
 
-  const titulo = document.createElement('h2');
-  titulo.textContent = pergunta.pergunta;
-  quizContainer.appendChild(titulo);
+  // Atualiza o texto da pergunta no h2 existente
+  const textoPergunta = document.getElementById('texto-pergunta');
+  textoPergunta.innerText = pergunta.pergunta;
+
+  // Mostra os botões de ouvir e parar
+  const botaoOuvir = document.getElementById('btn-ouvir-pergunta');
+  const botaoParar = document.getElementById('btn-parar-leitura');
+  botaoOuvir.style.display = 'inline-block';
+  botaoParar.style.display = 'none'; // Começa escondido até começar a falar
+
+  // Atualiza as opções de resposta
+  const quizContainer = document.querySelector('.quiz-content');
+
+  // Remove opções antigas, se existirem
+  const opcoesAntigas = document.querySelector('.options');
+  if (opcoesAntigas) {
+    opcoesAntigas.remove();
+  }
 
   const opcoesDiv = document.createElement('div');
   opcoesDiv.classList.add('options');
@@ -95,21 +107,18 @@ function mostrarPergunta() {
 
   quizContainer.appendChild(opcoesDiv);
 }
+
 // Finalizar quiz e juntar tags
 async function finalizarQuiz() {
   try {
-    // Somente salvar as respostas do quiz
     localStorage.setItem('tags_acumuladas', JSON.stringify(respostasTags));
     window.location.href = 'resultado.html';
-
   } catch (error) {
     console.error('Erro ao finalizar o quiz:', error);
     alert('Erro ao salvar suas respostas. Tente novamente.');
     window.location.href = 'index.html';
   }
 }
-
-
 
 // Iniciar quiz
 async function iniciarQuiz() {
@@ -120,3 +129,58 @@ async function iniciarQuiz() {
 }
 
 window.addEventListener('DOMContentLoaded', iniciarQuiz);
+
+// Função para falar pergunta e opções
+function falarPergunta() {
+  if ('speechSynthesis' in window) {
+    speechSynthesis.cancel();
+
+    const tituloPergunta = document.getElementById('texto-pergunta').innerText;
+    const opcoes = document.querySelectorAll('.options button');
+
+    let textoCompleto = tituloPergunta;
+
+    if (opcoes.length > 0) {
+      textoCompleto += ". Alternativas: ";
+      opcoes.forEach((opcao, index) => {
+        textoCompleto += opcao.innerText;
+        if (index < opcoes.length - 1) {
+          textoCompleto += ", ";
+        } else {
+          textoCompleto += ".";
+        }
+      });
+    }
+
+    const utterance = new SpeechSynthesisUtterance(textoCompleto);
+    utterance.lang = 'pt-BR';
+    utterance.rate = 1;
+
+    const botaoOuvir = document.getElementById('btn-ouvir-pergunta');
+    const botaoParar = document.getElementById('btn-parar-leitura');
+
+    botaoOuvir.classList.add('piscando'); // começa a piscar
+    botaoParar.style.display = 'inline-block'; // mostra botão de parar
+
+    // Quando terminar de falar, para o piscar e some o botão de parar
+    utterance.onend = () => {
+      botaoOuvir.classList.remove('piscando');
+      botaoParar.style.display = 'none';
+    };
+
+    speechSynthesis.speak(utterance);
+  } else {
+    alert('Seu navegador não suporta leitura de texto.');
+  }
+}
+
+// Função para parar leitura
+function pararLeitura() {
+  if ('speechSynthesis' in window) {
+    speechSynthesis.cancel();
+    const botaoOuvir = document.getElementById('btn-ouvir-pergunta');
+    const botaoParar = document.getElementById('btn-parar-leitura');
+    botaoOuvir.classList.remove('piscando'); // para de piscar
+    botaoParar.style.display = 'none'; // esconde botão de parar
+  }
+}
