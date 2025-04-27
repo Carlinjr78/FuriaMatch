@@ -69,7 +69,6 @@ function mostrarPergunta() {
   quizContainer.innerHTML = '';
 
   if (perguntaAtual >= perguntas.length) {
-    // Se terminou o quiz, soma as tags dos seguidos + quiz
     finalizarQuiz();
     return;
   }
@@ -96,24 +95,11 @@ function mostrarPergunta() {
 
   quizContainer.appendChild(opcoesDiv);
 }
-
 // Finalizar quiz e juntar tags
 async function finalizarQuiz() {
   try {
-    const response = await fetch('../dados/tags_map.json');
-    const tagsMap = await response.json();
-
-    let tagsHandles = [];
-    (usuarioAtual.seguidos || []).forEach(handle => {
-      const tags = tagsMap[handle];
-      if (tags) {
-        tagsHandles.push(...tags);
-      }
-    });
-
-    const todasTags = [...tagsHandles, ...respostasTags];
-    localStorage.setItem('tags_acumuladas', JSON.stringify(todasTags));
-
+    // Somente salvar as respostas do quiz
+    localStorage.setItem('tags_acumuladas', JSON.stringify(respostasTags));
     window.location.href = 'resultado.html';
 
   } catch (error) {
@@ -122,6 +108,8 @@ async function finalizarQuiz() {
     window.location.href = 'index.html';
   }
 }
+
+
 
 // Iniciar quiz
 async function iniciarQuiz() {

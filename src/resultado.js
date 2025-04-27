@@ -3,11 +3,9 @@
 async function calcularResultado() {
   const respostasQuiz = JSON.parse(localStorage.getItem('tags_acumuladas')) || [];
   const grupoPergunta = localStorage.getItem('grupo_pergunta');
-  const usuarioAtual = JSON.parse(localStorage.getItem('usuario_atual')) || {};
-  const seguidos = usuarioAtual.seguidos || [];
 
-  if (respostasQuiz.length === 0 && seguidos.length === 0) {
-    alert("Nenhuma resposta encontrada. Redirecionando para o início.");
+  if (!respostasQuiz.length || !grupoPergunta) {
+    alert("Informações insuficientes. Redirecionando para o início.");
     window.location.href = 'index.html';
     return;
   }
@@ -27,42 +25,35 @@ async function calcularResultado() {
 
     const contagem = {};
 
-    // Soma tags dos seguidos (se houver)
-    seguidos.forEach(handle => {
-      const categorias = personalidadesData[handle];
-      if (categorias) {
-        categorias.forEach(cat => {
-          contagem[handle] = (contagem[handle] || 0) + 1;
-        });
-      }
-    });
-
-    // Soma tags respondidas no quiz
+    // Para cada TAG que o usuário acumulou
     respostasQuiz.forEach(tag => {
-      const personalidades = tagsMap[tag];
-      if (personalidades) {
-        personalidades.forEach(p => {
-          contagem[p] = (contagem[p] || 0) + 1;
-        });
+      for (const [personalidade, tags] of Object.entries(tagsMap)) {
+        if (tags.includes(tag)) {
+          contagem[personalidade] = (contagem[personalidade] || 0) + 1;
+        }
       }
     });
 
-    // Filtro por grupo da pergunta
-    const contagemFiltrado = Object.entries(contagem).filter(([nome]) => {
-      const grupos = personalidadesData[nome];
+    // Agora filtramos apenas personalidades que pertencem ao grupo certo
+    const contagemFiltrado = Object.entries(contagem).filter(([nomePersonalidade]) => {
+      const grupos = personalidadesData[nomePersonalidade];
       return grupos && grupos.includes(grupoPergunta);
     });
 
-    let vencedor = contagemFiltrado.sort((a, b) => b[1] - a[1])[0];
+    let vencedor;
 
-    if (!vencedor) {
-      console.warn('Nenhum vencedor filtrado, sorteando...');
-      const possiveis = Object.entries(personalidadesData)
+    if (contagemFiltrado.length > 0) {
+      // Ordena quem tem mais pontos
+      vencedor = contagemFiltrado.sort((a, b) => b[1] - a[1])[0];
+    } else {
+      // Se ninguém, sorteia um do grupo
+      console.warn('Nenhum vencedor filtrado. Sorteando...');
+      const candidatos = Object.entries(personalidadesData)
         .filter(([_, grupos]) => grupos.includes(grupoPergunta))
         .map(([nome]) => nome);
 
-      if (possiveis.length > 0) {
-        const aleatorio = possiveis[Math.floor(Math.random() * possiveis.length)];
+      if (candidatos.length > 0) {
+        const aleatorio = candidatos[Math.floor(Math.random() * candidatos.length)];
         vencedor = [aleatorio, 1];
       } else {
         alert("Não conseguimos identificar seu match. Redirecionando para o início.");
@@ -71,10 +62,10 @@ async function calcularResultado() {
       }
     }
 
-    const [nomePersonalidade, pontos] = vencedor;
+    const [nomeFinal, pontos] = vencedor;
 
-    localStorage.setItem('match_final', JSON.stringify({ nome: nomePersonalidade, pontos }));
-    exibirResultado(nomePersonalidade, descricoes[nomePersonalidade], redesSociais[nomePersonalidade]);
+    localStorage.setItem('match_final', JSON.stringify({ nome: nomeFinal, pontos }));
+    exibirResultado(nomeFinal, descricoes[nomeFinal], redesSociais[nomeFinal]);
 
   } catch (error) {
     console.error('Erro ao calcular resultado:', error);
@@ -133,5 +124,5 @@ function formatarNome(nome) {
   return nome.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 }
 
-// Iniciar
+// Quando a página carregar
 window.addEventListener('DOMContentLoaded', calcularResultado);

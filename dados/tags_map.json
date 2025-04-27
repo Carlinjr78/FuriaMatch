@@ -1,357 +1,64 @@
 {
-"fallen": [
-    "estratégico",
-    "igl",
-    "liderança",
-    "frio",
-    "coletivo",
-    "tático",
-    "resiliente"
-  ],
-  "yekindar": [
-    "agressivo",
-    "ousado",
-    "impulsivo",
-    "explosivo",
-    "confiante"
-  ],
-  "kscerato": [
-    "preciso",
-    "frio",
-    "técnico",
-    "confiável",
-    "defensivo",
-    "disciplinado",
-    "consistente"
-  ],
-  "yuurih": [
-    "frio",
-    "técnico",
-    "consistente",
-    "clutch",
-    "confiável"
-  ],
-  "molodoy": [
-    "explosivo",
-    "ousado",
-    "emocionante",
-    "impacto",
-    "imprevisível"
-  ],
-  "skullz": [
-    "preciso",
-    "frio",
-    "técnico",
-    "clutch",
-    "consistente"
-  ],
-  "sofiaespanha": [
-    "criativo",
-    "lifestyle",
-    "comunicativo",
-    "espontâneo",
-    "estiloso"
-  ],
-  "brino": [
-    "humor",
-    "criativo",
-    "espontâneo",
-    "comunicativo",
-    "casual",
-    "divertido",
-    "autêntico"
-  ],
-  "omanelzin": [
-    "divertido",
-    "comunicativo",
-    "humor",
-    "espontâneo"
-  ],
-  "paula_nobre": [
-    "analítico",
-    "comunicativo",
-    "crítico",
-    "estratégico",
-    "sensível"
-  ],
-  "xarola": [
-    "divertido",
-    "comunicativo",
-    "espontâneo"
-  ],
-  "otsuka": [
-    "criativo",
-    "nerd",
-    "inovador",
-    "storytelling"
-  ],
-  "thiago_semt": [
-    "analítico",
-    "criativo",
-    "crítico",
-    "autêntico"
-  ],
-  "mount": [
-    "criativo",
-    "lifestyle",
-    "visual",
-    "storytelling"
-  ],
-  "noooobzim": [
-    "divertido",
-    "humor",
-    "espontâneo",
-    "casual"
-  ],
-  "neymar": [
-    "ousado",
-    "estiloso",
-    "emocionante",
-    "impacto",
-    "carismático",
-    "instintivo",
-    "espontâneo"
-  ],
-  "crisguedes": [
-    "comunicativo",
-    "empático",
-    "liderança",
-    "resiliente",
-    "suporte",
-    "sensível",
-    "coletivo"
-  ],
-  "negrete": [
-    "divertido",
-    "emocionante",
-    "humor",
-    "espontâneo"
-  ],
-  "menzinho": [
-    "divertido",
-    "criativo",
-    "resiliente",
-    "humor"
-  ],
-  "leleti": [
-    "disciplinado",
-    "resiliente",
-    "defensivo",
-    "consistente"
-  ],
-  "lipao": [
-    "liderança",
-    "estratégico",
-    "confiante",
-    "impacto"
-  ],
-  "jeffinho": [
-    "divertido",
-    "espontâneo",
-    "emocionante"
-  ],
-  "victao": [
-    "resiliente",
-    "disciplinado",
-    "racional",
-    "determinado"
-  ],
-  "ayosa": [
-    "estratégico",
-    "analítico",
-    "frio",
-    "tático"
-  ],
-  "pelegrini": [
-    "criativo",
-    "ousado",
-    "autêntico",
-    "impacto"
-  ],
-  "dedo": [
-    "intensidade",
-    "impacto",
-    "explosivo",
-    "impulsivo"
-  ],
-  "a_batata": [
-    "divertido",
-    "humor",
-    "espontâneo",
-    "casual"
-  ],
-  "catroca": [
-    "comunicativo",
-    "coletivo",
-    "liderança"
-  ],
-  "lima": [
-    "defensivo",
-    "equilibrado",
-    "empático"
-  ],
-  "pastuch": [
-    "estratégico",
-    "analítico",
-    "frio",
-    "tático"
-  ],
-  "donato": [
-    "resiliente",
-    "determinado",
-    "impacto"
-  ],
-  "monagatti": [
-    "analítico",
-    "estratégico",
-    "persistente",
-    "criativo"
-  ],
-  "mwzera": [
-    "clutch",
-    "explosivo",
-    "preciso",
-    "habilidoso",
-    "impacto",
-    "confiante",
-    "emocionante"
-  ],
-  "raafa": [
-    "competitivo",
-    "impacto",
-    "agressivo"
-  ],
-  "heat": [
-    "explosivo",
-    "confiante",
-    "impacto",
-    "ousado"
-  ],
-  "havoc": [
-    "criativo",
-    "imprevisível",
-    "impacto"
-  ],
-  "khalil": [
-    "estratégico",
-    "tático",
-    "liderança",
-    "controle de mapa"
-  ],
-  "pryze": [
-    "ousado",
-    "inovador",
-    "versátil",
-    "impacto"
-  ],
-  "peu": [
-    "suporte",
-    "disciplinado",
-    "estratégico",
-    "coletivo"
-  ],
-  "lukzera": [
-    "suporte",
-    "disciplinado",
-    "preciso"
-  ],
-  "ayu": [
-    "talento",
-    "disciplinado",
-    "criativo",
-    "impacto"
-  ],
-  "jojo": [
-    "resiliente",
-    "coletivo",
-    "comunicativo",
-    "suporte",
-    "liderança",
-    "protetor",
-    "empático"
-  ],
-  "tutsz": [
-    "estratégico",
-    "técnico",
-    "habilidoso",
-    "mecânico"
-  ],
-  "tatu": [
-    "resiliente",
-    "disciplinado",
-    "firme"
-  ],
-  "guigo": [
-    "disciplinado",
-    "resiliente",
-    "trabalhador"
-  ],
-  "erick_furyz": [
-    "suporte",
-    "disciplinado",
-    "coletivo"
-  ],
-  "maestro_pierre": [
-    "estratégico",
-    "tático",
-    "comunicativo",
-    "liderança"
-  ],
-  "herdszz": [
-    "resiliente",
-    "disciplinado",
-    "trabalho duro"
-  ],
-  "felipox": [
-    "defensivo",
-    "disciplinado",
-    "técnico",
-    "suporte"
-  ],
-  "nade": [
-    "agressivo",
-    "impacto",
-    "confiante"
-  ],
-  "kheyze": [
-    "tático",
-    "rápido",
-    "ousado",
-    "imprevisível"
-  ],
-  "jv92": [
-    "defensivo",
-    "disciplinado",
-    "posicionado",
-    "frio"
-  ],
-  "vitzzz": [
-    "analítico",
-    "estratégico",
-    "tático"
-  ],
-  "igoorctg": [
-    "estratégico",
-    "disciplinado",
-    "suporte"
-  ],
-  "abreuzaooo": [
-    "suporte",
-    "disciplinado",
-    "coletivo"
-  ],
-  "caio_castro": [
-    "ousado",
-    "carismático",
-    "estiloso",
-    "emocionante",
-    "lifestyle",
-    "espontâneo",
-    "impacto"
-  ],
-  "matheus_comparatto": [
-    "preciso",
-    "disciplinado",
-    "consistente"
-  ]
+  "fallen": ["estrategico", "igl", "lideranca", "frio", "coletivo", "tatica", "resiliente", "calmo", "decisivo", "racional"],
+  "neymar": ["criativo", "ousado", "estiloso", "emocionante", "impacto", "espontaneo", "divertido", "instintivo", "carismatico", "inovador"],
+  "brino": ["humor", "casual", "criativo", "comunicativo", "autentico", "espontaneo", "divertido", "inovador", "opinativo"],
+  "jojo": ["resiliente", "coletivo", "comunicativo", "suporte", "lideranca", "protetor", "empatico", "tatico", "coordenação"],
+  "felipox": ["defensivo", "disciplinado", "tecnico", "suporte", "posicionado", "resiliente"],
+  "caio_castro": ["ousado", "estiloso", "emocionante", "carismatico", "instintivo", "impacto", "espontaneo", "midiatico", "inovador"],
+  "mwzera": ["clutch", "explosivo", "preciso", "habilidoso", "impacto", "confiante", "emocionante", "frio", "decisivo"],
+
+  "yuurih": ["frio", "tecnico", "consistente", "clutch", "confiavel", "preciso"],
+  "kscerato": ["preciso", "frio", "tecnico", "confiavel", "defensivo", "disciplinado"],
+  "skullz": ["preciso", "frio", "tecnico", "clutch", "consistente"],
+  "molodoy": ["explosivo", "ousado", "emocionante", "impacto", "imprevisivel"],
+  "raafa": ["competitivo", "impacto", "agressivo", "frio", "rapido", "emocao", "entry fragger"],
+  "heat": ["explosivo", "confiante", "impacto", "ousado", "controlador", "estudioso", "posicionado"],
+  "havoc": ["criativo", "imprevisivel", "impacto", "explorador"],
+  "khalil": ["estrategico", "tatica", "lideranca", "controle de mapa", "analitico"],
+  "pryze": ["ousado", "inovador", "versatil", "impacto", "criativo"],
+  "peu": ["suporte", "disciplinado", "estrategico", "coletivo", "resiliente"],
+  "lukzera": ["suporte", "disciplinado", "preciso", "posicionado"],
+
+  "sofiaespanha": ["criativo", "lifestyle", "comunicativo", "espontaneo", "estiloso"],
+  "omanelzin": ["divertido", "comunicativo", "humor", "espontaneo"],
+  "paula_nobre": ["analitico", "comunicativo", "critico", "estrategico"],
+  "xarola": ["divertido", "comunicativo", "espontaneo"],
+  "otsuka": ["criativo", "nerd", "inovador", "storytelling"],
+  "thiago_semt": ["analitico", "criativo", "critico", "autentico"],
+  "mount": ["criativo", "lifestyle", "visual", "storytelling"],
+  "noooobzim": ["divertido", "humor", "espontaneo", "casual"],
+
+  "crisguedes": ["comunicativo", "empatico", "lideranca", "resiliente", "suporte", "sensivel", "coletivo"],
+  "negrete": ["divertido", "emocionante", "humor", "espontaneo"],
+  "menzinho": ["divertido", "criativo", "resiliente", "humor"],
+  "leleti": ["disciplinado", "resiliente", "defensivo", "consistente"],
+  "lipao": ["lideranca", "estrategico", "confiante", "impacto"],
+  "jeffinho": ["divertido", "espontaneo", "emocionante"],
+  "victao": ["resiliente", "disciplinado", "racional", "determinado"],
+  "ayosa": ["estrategico", "analitico", "frio", "tatica"],
+  "pelegrini": ["criativo", "ousado", "autentico", "impacto"],
+
+  "dedo": ["intensidade", "impacto", "explosivo", "impulsivo"],
+  "a_batata": ["divertido", "humor", "espontaneo", "casual"],
+  "catroca": ["comunicativo", "coletivo", "lideranca"],
+  "lima": ["defensivo", "equilibrado", "empatico"],
+  "pastuch": ["estrategico", "analitico", "frio", "tatica"],
+  "donato": ["resiliente", "determinado", "impacto"],
+  "monagatti": ["analitico", "estrategico", "persistente", "criativo"],
+
+  "ayu": ["talento", "disciplinado", "criativo", "impacto"],
+  "tutsz": ["estrategico", "tecnico", "habilidoso", "mecanico"],
+  "tatu": ["resiliente", "disciplinado", "firme"],
+  "guigo": ["disciplinado", "resiliente", "trabalhador"],
+  "erick_furyz": ["suporte", "disciplinado", "coletivo"],
+  "maestro_pierre": ["estrategico", "tatica", "comunicativo", "lideranca"],
+  "herdszz": ["resiliente", "disciplinado", "trabalho duro"],
+  "nade": ["agressivo", "impacto", "confiante"],
+  "kheyze": ["tatica", "rapido", "ousado", "imprevisivel"],
+  "jv92": ["defensivo", "disciplinado", "posicionado", "frio"],
+  "vitzzz": ["analitico", "estrategico", "tatica"],
+  "igoorctg": ["estrategico", "disciplinado", "suporte"],
+  "abreuzaooo": ["suporte", "disciplinado", "coletivo"],
+  "matheus_comparatto": ["preciso", "disciplinado", "consistente"]
+
 }
