@@ -101,6 +101,80 @@
           ]
         }
       ]
+    },
+    {
+      "pergunta": "Se você tivesse que definir seu conteúdo ideal, seria...",
+      "opcoes": [
+        {
+          "texto": "Leve, engraçado e autêntico",
+          "tags": [
+            "humor",
+            "casual",
+            "espontâneo"
+          ]
+        },
+        {
+          "texto": "Informativo e analítico",
+          "tags": [
+            "analítico",
+            "crítico",
+            "nerd"
+          ]
+        },
+        {
+          "texto": "Criativo, visual e cheio de edição",
+          "tags": [
+            "criativo",
+            "storytelling",
+            "visual"
+          ]
+        },
+        {
+          "texto": "Reflexivo e transformador",
+          "tags": [
+            "crítico",
+            "curioso",
+            "autêntico"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual sua reação favorita ao consumir conteúdo?",
+      "opcoes": [
+        {
+          "texto": "Dou risada e compartilho na hora",
+          "tags": [
+            "humor",
+            "comunicativo",
+            "divertido"
+          ]
+        },
+        {
+          "texto": "Penso sobre o conteúdo e reflito",
+          "tags": [
+            "analítico",
+            "crítico",
+            "curioso"
+          ]
+        },
+        {
+          "texto": "Fico impressionado pela criatividade",
+          "tags": [
+            "criativo",
+            "inovador",
+            "espontâneo"
+          ]
+        },
+        {
+          "texto": "Me inspiro para criar algo novo",
+          "tags": [
+            "criativo",
+            "storytelling",
+            "autêntico"
+          ]
+        }
+      ]
     }
   ],
   "cs": [
@@ -112,7 +186,8 @@
           "tags": [
             "igl",
             "estratégico",
-            "liderança"
+            "liderança",
+            "resiliente"
           ]
         },
         {
@@ -149,7 +224,8 @@
           "tags": [
             "igl",
             "tático",
-            "calmo"
+            "calmo",
+            "resiliente"
           ]
         },
         {
@@ -186,7 +262,8 @@
           "tags": [
             "estratégico",
             "coletivo",
-            "tático"
+            "tático",
+            "resiliente"
           ]
         },
         {
@@ -211,6 +288,82 @@
             "coordenação",
             "liderança",
             "suporte"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Em um momento decisivo do jogo, qual papel combina mais com você?",
+      "opcoes": [
+        {
+          "texto": "Assumir a responsabilidade e dar as calls",
+          "tags": [
+            "igl",
+            "liderança",
+            "estratégico",
+            "resiliente"
+          ]
+        },
+        {
+          "texto": "Fazer a jogada arriscada pra ganhar a rodada",
+          "tags": [
+            "entry fragger",
+            "agressivo",
+            "explosivo"
+          ]
+        },
+        {
+          "texto": "Garantir a kill certeira na hora certa",
+          "tags": [
+            "preciso",
+            "clutch",
+            "frio"
+          ]
+        },
+        {
+          "texto": "Manter o time focado e coordenado",
+          "tags": [
+            "suporte",
+            "coletivo",
+            "comunicativo"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Como você prefere decidir partidas importantes?",
+      "opcoes": [
+        {
+          "texto": "Com jogadas inteligentes e trabalhadas",
+          "tags": [
+            "estratégico",
+            "tático",
+            "liderança",
+            "resiliente"
+          ]
+        },
+        {
+          "texto": "Com reflexos rápidos e confiança",
+          "tags": [
+            "explosivo",
+            "confiante",
+            "impacto"
+          ]
+        },
+        {
+          "texto": "Com constância e precisão técnica",
+          "tags": [
+            "técnico",
+            "preciso",
+            "confiável"
+          ]
+        },
+        {
+          "texto": "Com leitura de jogo e adaptação",
+          "tags": [
+            "versátil",
+            "analítico",
+            "controle de mapa"
           ]
         }
       ]
@@ -323,6 +476,80 @@
             "confiável",
             "firme",
             "defensivo"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual frase mais define seu estilo de jogo no futebol?",
+      "opcoes": [
+        {
+          "texto": "Inteligência vence força",
+          "tags": [
+            "estratégico",
+            "racional",
+            "visão de jogo"
+          ]
+        },
+        {
+          "texto": "Alegria contagia e vence jogos",
+          "tags": [
+            "divertido",
+            "espontâneo",
+            "ousado"
+          ]
+        },
+        {
+          "texto": "Consistência é o que ganha campeonatos",
+          "tags": [
+            "disciplinado",
+            "defensivo",
+            "firme"
+          ]
+        },
+        {
+          "texto": "Liderar é fazer todos jogarem melhor",
+          "tags": [
+            "liderança",
+            "coletivo",
+            "apoio"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Num jogo difícil, você prefere...",
+      "opcoes": [
+        {
+          "texto": "Assumir a responsabilidade e decidir",
+          "tags": [
+            "confiante",
+            "impacto",
+            "emocionante"
+          ]
+        },
+        {
+          "texto": "Manter o time organizado e consistente",
+          "tags": [
+            "disciplinado",
+            "defensivo",
+            "suporte"
+          ]
+        },
+        {
+          "texto": "Inspirar com criatividade e improviso",
+          "tags": [
+            "criativo",
+            "ousado",
+            "inovador"
+          ]
+        },
+        {
+          "texto": "Proteger a equipe e garantir a defesa",
+          "tags": [
+            "protetor",
+            "firme",
+            "confiável"
           ]
         }
       ]
@@ -439,6 +666,80 @@
           ]
         }
       ]
+    },
+    {
+      "pergunta": "Se você fosse um campeão no LoL, seria mais...",
+      "opcoes": [
+        {
+          "texto": "O estrategista que pensa no macro game",
+          "tags": [
+            "estratégico",
+            "tático",
+            "controle de mapa"
+          ]
+        },
+        {
+          "texto": "O mecânico que brilha na habilidade",
+          "tags": [
+            "habilidoso",
+            "explosivo",
+            "clutch"
+          ]
+        },
+        {
+          "texto": "O suporte silencioso que salva a equipe",
+          "tags": [
+            "suporte",
+            "protetor",
+            "comunicativo"
+          ]
+        },
+        {
+          "texto": "O inovador que quebra o meta",
+          "tags": [
+            "inovador",
+            "criativo",
+            "ousado"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "No meio de uma teamfight intensa, você...",
+      "opcoes": [
+        {
+          "texto": "Organiza a movimentação e chama as plays",
+          "tags": [
+            "comunicativo",
+            "liderança",
+            "coordenação"
+          ]
+        },
+        {
+          "texto": "Vai pra cima confiando no seu reflexo",
+          "tags": [
+            "agressivo",
+            "impacto",
+            "explosivo"
+          ]
+        },
+        {
+          "texto": "Fica na retaguarda protegendo o time",
+          "tags": [
+            "suporte",
+            "firme",
+            "disciplinado"
+          ]
+        },
+        {
+          "texto": "Aproveita o momento pra criar jogadas criativas",
+          "tags": [
+            "criativo",
+            "ousado",
+            "inovador"
+          ]
+        }
+      ]
     }
   ],
   "porsche_cup": [
@@ -549,6 +850,80 @@
             "estratégico",
             "técnico",
             "controlado"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "No automobilismo, você valoriza mais...",
+      "opcoes": [
+        {
+          "texto": "Estilo e carisma nas pistas",
+          "tags": [
+            "estiloso",
+            "carismático",
+            "ousado"
+          ]
+        },
+        {
+          "texto": "Precisa técnica e constância",
+          "tags": [
+            "preciso",
+            "disciplinado",
+            "controlador"
+          ]
+        },
+        {
+          "texto": "Estratégia de corrida e pit stop",
+          "tags": [
+            "estratégico",
+            "calculista",
+            "tático"
+          ]
+        },
+        {
+          "texto": "Ultrapassagens arriscadas e emoção",
+          "tags": [
+            "emocionante",
+            "instintivo",
+            "agressivo"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Se você pilotasse, seria mais conhecido por...",
+      "opcoes": [
+        {
+          "texto": "Seus movimentos ousados e estilo único",
+          "tags": [
+            "ousado",
+            "midiático",
+            "emocionante"
+          ]
+        },
+        {
+          "texto": "Sua precisão e regularidade",
+          "tags": [
+            "preciso",
+            "disciplinado",
+            "consistente"
+          ]
+        },
+        {
+          "texto": "Sua capacidade de tomar decisões rápidas",
+          "tags": [
+            "instintivo",
+            "rápido",
+            "impacto"
+          ]
+        },
+        {
+          "texto": "Sua inteligência na hora de mudar a estratégia",
+          "tags": [
+            "estratégico",
+            "calculista",
+            "frio"
           ]
         }
       ]
@@ -665,6 +1040,80 @@
           ]
         }
       ]
+    },
+    {
+      "pergunta": "No Rainbow Six, sua força maior é...",
+      "opcoes": [
+        {
+          "texto": "Tomar iniciativa e entrar primeiro",
+          "tags": [
+            "entry fragger",
+            "agressivo",
+            "impulsivo"
+          ]
+        },
+        {
+          "texto": "Segurar posição com paciência",
+          "tags": [
+            "defensivo",
+            "posicionado",
+            "disciplinado"
+          ]
+        },
+        {
+          "texto": "Adaptar-se e mudar de papel conforme necessário",
+          "tags": [
+            "versátil",
+            "adaptável",
+            "explorador"
+          ]
+        },
+        {
+          "texto": "Coordenar o time com calls e estratégia",
+          "tags": [
+            "igl",
+            "estratégico",
+            "liderança"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "O que mais impressiona você assistindo R6?",
+      "opcoes": [
+        {
+          "texto": "Táticas bem elaboradas",
+          "tags": [
+            "estratégico",
+            "tático",
+            "controle de mapa"
+          ]
+        },
+        {
+          "texto": "Execuções explosivas e agressivas",
+          "tags": [
+            "agressivo",
+            "impacto",
+            "explosivo"
+          ]
+        },
+        {
+          "texto": "Clutches que viram rounds perdidos",
+          "tags": [
+            "clutch",
+            "frio",
+            "decisivo"
+          ]
+        },
+        {
+          "texto": "Trabalho em equipe e comunicação",
+          "tags": [
+            "suporte",
+            "coletivo",
+            "comunicativo"
+          ]
+        }
+      ]
     }
   ],
   "valorant": [
@@ -775,6 +1224,80 @@
             "igl",
             "suporte",
             "coordenação"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual função de Valorant te representa mais?",
+      "opcoes": [
+        {
+          "texto": "Entry fragger que abre os espaços",
+          "tags": [
+            "entry fragger",
+            "agressivo",
+            "impacto"
+          ]
+        },
+        {
+          "texto": "Controlador que dita o ritmo da partida",
+          "tags": [
+            "estratégico",
+            "controlador",
+            "tático"
+          ]
+        },
+        {
+          "texto": "Clutcher que decide rounds impossíveis",
+          "tags": [
+            "clutch",
+            "frio",
+            "decisivo"
+          ]
+        },
+        {
+          "texto": "Suporte que constrói a vitória",
+          "tags": [
+            "suporte",
+            "coletivo",
+            "resiliente"
+          ]
+        }
+      ]
+    },
+    {
+      "pergunta": "Na preparação para o jogo, você é mais...",
+      "opcoes": [
+        {
+          "texto": "Estudioso que analisa tudo antes de jogar",
+          "tags": [
+            "analítico",
+            "estudioso",
+            "controle de mapa"
+          ]
+        },
+        {
+          "texto": "Confiante que se adapta ao que vier",
+          "tags": [
+            "versátil",
+            "confiante",
+            "flexível"
+          ]
+        },
+        {
+          "texto": "Explosivo que surpreende na execução",
+          "tags": [
+            "explosivo",
+            "impulsivo",
+            "emocionante"
+          ]
+        },
+        {
+          "texto": "Calmo que lidera o time com tática",
+          "tags": [
+            "igl",
+            "liderança",
+            "frio"
           ]
         }
       ]

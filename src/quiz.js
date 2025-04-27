@@ -1,12 +1,12 @@
 // src/quiz.js
 
-// Pega o usuário que foi salvo no localStorage
+// Pega o usuário salvo no localStorage
 const usuarioAtual = JSON.parse(localStorage.getItem('usuario_atual'));
 if (!usuarioAtual) {
   window.location.href = 'index.html';
 }
 
-// Função para descobrir a categoria dominante (ou sortear no empate)
+// Função para descobrir a categoria dominante
 async function descobrirCategoriaDominante() {
   const response = await fetch('../dados/personalidades.json');
   const personalidades = await response.json();
@@ -51,27 +51,26 @@ async function descobrirCategoriaDominante() {
   }
 }
 
-// Função para carregar perguntas da categoria correta
+// Função para carregar perguntas da categoria
 async function carregarPerguntas(categoria) {
   const response = await fetch('../dados/perguntas.json');
   const perguntasPorCategoria = await response.json();
   return perguntasPorCategoria[categoria] || [];
 }
 
-// Variáveis de controle
+// Variáveis
 let perguntas = [];
 let perguntaAtual = 0;
 let respostasTags = [];
 
-// Função para mostrar a pergunta atual
+// Mostrar pergunta atual
 function mostrarPergunta() {
   const quizContainer = document.querySelector('.quiz-content');
   quizContainer.innerHTML = '';
 
   if (perguntaAtual >= perguntas.length) {
-    // Se terminou o quiz, salva as tags acumuladas e vai para o resultado
-    localStorage.setItem('tags_acumuladas', JSON.stringify(respostasTags));
-    window.location.href = 'resultado.html';
+    // Se terminou o quiz, soma as tags dos seguidos + quiz
+    finalizarQuiz();
     return;
   }
 
@@ -98,12 +97,38 @@ function mostrarPergunta() {
   quizContainer.appendChild(opcoesDiv);
 }
 
-// Função principal para iniciar o quiz
+// Finalizar quiz e juntar tags
+async function finalizarQuiz() {
+  try {
+    const response = await fetch('../dados/tags_map.json');
+    const tagsMap = await response.json();
+
+    let tagsHandles = [];
+    (usuarioAtual.seguidos || []).forEach(handle => {
+      const tags = tagsMap[handle];
+      if (tags) {
+        tagsHandles.push(...tags);
+      }
+    });
+
+    const todasTags = [...tagsHandles, ...respostasTags];
+    localStorage.setItem('tags_acumuladas', JSON.stringify(todasTags));
+
+    window.location.href = 'resultado.html';
+
+  } catch (error) {
+    console.error('Erro ao finalizar o quiz:', error);
+    alert('Erro ao salvar suas respostas. Tente novamente.');
+    window.location.href = 'index.html';
+  }
+}
+
+// Iniciar quiz
 async function iniciarQuiz() {
   const categoria = await descobrirCategoriaDominante();
+  localStorage.setItem('grupo_pergunta', categoria);
   perguntas = await carregarPerguntas(categoria);
   mostrarPergunta();
 }
 
-// Iniciar quando carregar a página
 window.addEventListener('DOMContentLoaded', iniciarQuiz);

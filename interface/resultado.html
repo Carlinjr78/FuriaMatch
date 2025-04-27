@@ -8,17 +8,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="result-container">
-    <div class="result-content">
-      <h1>Carregando seu resultado...</h1>
+
+  <div class="container">
+    <!-- Lado da Imagem -->
+    <div class="image-side">
+      <img id="profile-pic" src="" alt="Foto da Personalidade" class="profile-pic">
+    </div>
+
+    <!-- Lado do Conteúdo -->
+    <div class="content-side">
+      <h1 id="nome-personalidade">Carregando...</h1> <!-- 👈 Agora o nome sozinho em destaque -->
+      <p id="descricao-personalidade">Carregando descrição...</p>
+
+      <!-- Redes Sociais -->
+      <div id="social-section" style="display: none;">
+        <h3 id="social-title" style="margin-bottom: 20px;"></h3>
+        <div id="social-links" class="social-links"></div>
+      </div>
+
+      <!-- Botões -->
+      <div class="buttons">
+        <a href="index.html" class="btn-start">Jogar Novamente</a>
+        <a id="compartilhar-btn" href="#" class="btn-start">Compartilhar no X</a>
+      </div>
     </div>
   </div>
 
+  <script src="../src/resultado.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('fade-in');
     });
   </script>
-  <script src="../src/resultado.js"></script>
 </body>
 </html>
