@@ -33,15 +33,15 @@ body.fade-in {
   padding: 80px;
 }
 
-/* Imagem da Home */
 .image-side.home {
   flex: 1.4;
   background-color: #111;
-  background-image: url("assets/grupo.png");
+  background-image: url("../assets/grupo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 /* Imagem do Resultado */
 .image-side.result {
