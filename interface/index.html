@@ -13,24 +13,30 @@
       <!-- A imagem será aplicada via CSS -->
     </div>
     <div class="content-side">
-      
+
       <!-- 🔊 Botão de ouvir (AGORA ANTES DO TÍTULO) -->
       <button class="btn-audio" onclick="falarIntro()">🔊 Ouvir Introdução</button>
 
       <h1 class="home-title" id="titulo-intro">
-        DESCUBRA<br>QUEM VOCÊ É<br>NO UNIVERSO<br> FURIA
+        DESCUBRA<br>QUEM VOCÊ É<br>NO UNIVERSO<br>FURIA
       </h1>
 
       <p id="intro-text">Conecte seu perfil e comece a jornada.</p>
 
-      <input id="handle-input" type="text" placeholder="@seu_usuario">
+      <input id="handle-input" type="text" placeholder="Digite @usuario_01 para testar">
       <button class="btn-start" id="start-button">COMEÇAR AGORA</button>
     </div>
   </div>
 
+  <!-- Scripts -->
+  <script src="../src/script.js"></script>
+
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('fade-in');
+
+      // 🔔 Alerta amigável na primeira abertura
+      alert('Bem-vindo ao FURIA MATCH!\n\nEste é um protótipo desenvolvido para o desafio técnico da FURIA Tech.\n\nPara testar, digite: @usuario_01 e comece sua jornada!');
     });
 
     // 🔊 Função de Text-to-Speech (Intro Completa)
@@ -50,6 +56,5 @@
     }
   </script>
 
-  <script src="../src/script.js"></script>
 </body>
 </html>

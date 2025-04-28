@@ -116,12 +116,18 @@ async function finalizarQuiz() {
   } catch (error) {
     console.error('Erro ao finalizar o quiz:', error);
     alert('Erro ao salvar suas respostas. Tente novamente.');
-    window.location.href = 'index.html';
+    document.body.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;height:100vh;font-size:30px;">Calculando seu resultado...</div>';
+    await new Promise(resolve => setTimeout(resolve, 6000));
+  window.location.href = 'resultado.html';
+
   }
 }
 
 // Iniciar quiz
 async function iniciarQuiz() {
+  // Mostra a tela de analisando perfil...
+  await new Promise(resolve => setTimeout(resolve, 2000)); // Aguarda 1.5 segundos
+
   const categoria = await descobrirCategoriaDominante();
   localStorage.setItem('grupo_pergunta', categoria);
   perguntas = await carregarPerguntas(categoria);
