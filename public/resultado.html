@@ -18,13 +18,13 @@
     <!-- Lado do Conteúdo -->
     <div class="content-side">
 
-      <!-- 🔊 Botões de Acessibilidade (apenas no conteúdo) -->
+      <!-- 🔊 Botões de Acessibilidade -->
       <button class="btn-audio" id="btn-ouvir-resultado" onclick="falarResultado()" style="display: none;">🔊 Ouvir Resultado</button>
       <button class="btn-audio" id="btn-parar-leitura" onclick="pararLeitura()" style="display: none;">⏹️ Parar Leitura</button>
 
       <!-- Conteúdo -->
-      <h1 id="nome-personalidade">Carregando...</h1> <!-- Nome -->
-      <p id="descricao-personalidade">Carregando descrição...</p> <!-- Descrição -->
+      <h1 id="nome-personalidade">Carregando...</h1>
+      <p id="descricao-personalidade">Carregando descrição...</p>
 
       <!-- Redes Sociais -->
       <div id="social-section" style="display: none;">
@@ -41,6 +41,7 @@
     </div>
   </div>
 
+  <!-- Scripts Existentes -->
   <script src="src/resultado.js"></script>
 
   <script>
@@ -91,5 +92,49 @@
       }
     }
   </script>
+
+  <!-- 🔥 Scripts de integração com Supabase - Inseridos com cuidado -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="src/script.js"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      console.log('🔵 Iniciando integração Supabase...');
+
+      // Recupera o usuário atual do localStorage
+      const usuarioAtual = JSON.parse(localStorage.getItem('usuario_atual'));
+
+      if (!usuarioAtual || !usuarioAtual.seguidos || !usuarioAtual.handle) {
+        console.error('❌ Usuário atual ou dados incompletos no localStorage.');
+        return;
+      }
+
+      const handle = usuarioAtual.handle;
+      const perfisSeguidos = usuarioAtual.seguidos;
+
+      try {
+        // Carrega o personalidades.json
+        const personalidades = await fetch('dados/personalidades.json')
+          .then(response => response.json());
+
+        if (!personalidades) {
+          console.error('❌ Erro ao carregar personalidades.json');
+          return;
+        }
+
+        // Conta quantos perfis ele segue de cada grupo
+        const contagens = await gerarContagemGrupos(perfisSeguidos, personalidades);
+        console.log('🟢 Contagens geradas:', contagens);
+
+        // Envia para Supabase
+        await enviarResumoJogo(handle, contagens);
+        console.log('✅ Dados enviados para Supabase com sucesso!');
+
+      } catch (error) {
+        console.error('❌ Erro no processo de integração:', error);
+      }
+    });
+  </script>
+
 </body>
 </html>
