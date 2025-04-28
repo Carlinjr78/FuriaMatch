@@ -36,7 +36,7 @@ body.fade-in {
 .image-side.home {
   flex: 1.4;
   background-color: #111;
-  background-image: url("../assets/grupo.png");
+  background-image: url("assets/grupo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

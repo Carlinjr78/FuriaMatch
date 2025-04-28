@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     try {
-      const response = await fetch('../dados/usuarios_simulados.json');
+      const response = await fetch('dados/usuarios_simulados.json');
       const usuarios = await response.json();
 
       const usuarioEncontrado = usuarios.find(user => user.handle.toLowerCase() === userInput);

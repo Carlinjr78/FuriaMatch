@@ -8,7 +8,7 @@ if (!usuarioAtual) {
 
 // Função para descobrir a categoria dominante
 async function descobrirCategoriaDominante() {
-  const response = await fetch('../dados/personalidades.json');
+  const response = await fetch('dados/personalidades.json');
   const personalidades = await response.json();
   const contagemCategorias = {};
 
@@ -53,7 +53,7 @@ async function descobrirCategoriaDominante() {
 
 // Função para carregar perguntas da categoria
 async function carregarPerguntas(categoria) {
-  const response = await fetch('../dados/perguntas.json');
+  const response = await fetch('dados/perguntas.json');
   const perguntasPorCategoria = await response.json();
   return perguntasPorCategoria[categoria] || [];
 }

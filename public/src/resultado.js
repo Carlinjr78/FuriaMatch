@@ -12,10 +12,10 @@ async function calcularResultado() {
 
   try {
     const [tagsMapRes, descricoesRes, redesRes, personalidadesRes] = await Promise.all([
-      fetch('../dados/tags_map.json'),
-      fetch('../dados/descricoes.json'),
-      fetch('../dados/redes_sociais.json'),
-      fetch('../dados/personalidades.json')
+      fetch('dados/tags_map.json'),
+      fetch('dados/descricoes.json'),
+      fetch('dados/redes_sociais.json'),
+      fetch('dados/personalidades.json')
     ]);
 
     const tagsMap = await tagsMapRes.json();
@@ -76,7 +76,7 @@ async function calcularResultado() {
 
 function exibirResultado(nome, descricao, redes) {
   const img = document.getElementById('profile-pic');
-  img.src = `../assets/${nome}.png`;
+  img.src = `assets/${nome}.png`;
   img.alt = formatarNome(nome);
 
   document.getElementById('nome-personalidade').textContent = formatarNome(nome);
@@ -101,7 +101,7 @@ function exibirResultado(nome, descricao, redes) {
         const a = document.createElement('a');
         a.href = redes[rede];
         a.target = '_blank';
-        a.innerHTML = `<img src="../assets/${icones[rede]}" alt="${rede}">`;
+        a.innerHTML = `<img src="assets/${icones[rede]}" alt="${rede}">`;
         socialLinks.appendChild(a);
       }
     }
