@@ -1,46 +1,46 @@
 [
   {
-    "handle": "usuario_01",
+    "handle": "@usuario_01",
     "seguidos": ["fallen", "sofia_espanha", "neymar", "mwzera", "ayu", "felipox", "caio_castro"]
   },
   {
-    "handle": "usuario_02",
+    "handle": "@usuario_02",
     "seguidos": ["ayu", "jojo", "tutsz", "tatu", "guigo", "erick_furyz", "maestro_pierre"] 
   },
   {
-    "handle": "usuario_03",
+    "handle": "@usuario_03",
     "seguidos": ["vitzzz", "felipox", "nade", "kheyze", "jv92", "igoorctg", "abreuzaooo"]
   },
   {
-    "handle": "usuario_04",
+    "handle": "@usuario_04",
     "seguidos": ["mwzera", "raafa", "heat", "havoc", "khalil", "pryze", "peu", "lukzera"]
   },
   {
-    "handle": "usuario_05",
+    "handle": "@usuario_05",
     "seguidos": ["neymar", "crisguedes", "negrete", "menzinho", "leleti", "lipao", "jeffinho", "victao", "ayosa", "pelegrini"]
   },
   {
-    "handle": "usuario_06",
+    "handle": "@usuario_06",
     "seguidos": ["fallen", "yekindar", "kscerato", "yuurih", "molodoy", "skullz"]
   },
   {
-    "handle": "usuario_07",
+    "handle": "@usuario_07",
     "seguidos": ["sofia_espanha", "brino", "omanelzin", "paula_nobre", "xarola", "otsuka", "thiago_semt", "mount", "noooobzim"]
   },
   {
-    "handle": "usuario_08",
+    "handle": "@usuario_08",
     "seguidos": ["caio_castro", "matheus_comparatto"]
   },
   {
-    "handle": "usuario_09",
+    "handle": "@usuario_09",
     "seguidos": ["yekindar", "xarola", "catroca", "havoc", "jojo", "igoorctg", "crisguedes", "mount", "pastuch", "mwzera"]
   },
   {
-    "handle": "usuario_10",
+    "handle": "@usuario_10",
     "seguidos": ["molodoy", "sofia_spanha", "pelegrini", "pryze", "tatu", "vitzzz", "ayosa", "paula_nobre", "donato", "matheus_comparatto"]
   },
   {
-    "handle": "usuario_11",
+    "handle": "@usuario_11",
     "seguidos": ["fallen", "yekindar", "kscerato", "yuurih", "molodoy", "skullz", "caio_castro", "omanelzin", "donato", "lukzera"]
   }
 ]
