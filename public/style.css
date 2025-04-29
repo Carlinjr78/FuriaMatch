@@ -237,8 +237,8 @@ button:hover, .btn-start:hover, .btn-audio:hover {
 #nome-personalidade {
   font-size: 50px;
   margin-top: 10px;
-  text-align: left; /* 👉 alinhamento corrigido */
-  width: 100%; /* 👉 garante que ele ocupa toda a largura */
+  text-align: left; 
+  width: 100%; 
 }
 
 #descricao-personalidade {
@@ -247,7 +247,7 @@ button:hover, .btn-start:hover, .btn-audio:hover {
   margin: 20px 0 40px;
   max-width: 800px;
   line-height: 1.5;
-  text-align: left; /* já tava, mas reforçando */
+  text-align: left; 
 }
 
 /* Seção de redes sociais */
@@ -320,7 +320,7 @@ button:hover, .btn-start:hover, .btn-audio:hover {
   background-color: #e6003f;
 }
 
-/* 🔥 MOBILE RESPONSIVO */
+/* MOBILE RESPONSIVO */
 @media (max-width: 768px) {
   .container, .quiz-container {
     flex-direction: column;

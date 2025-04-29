@@ -1,6 +1,6 @@
 console.log("script.js carregado");
 
-// Código atual de carregamento do botão de início
+// Código de carregamento do botão de início
 document.addEventListener('DOMContentLoaded', () => {
   const startButton = document.getElementById('start-button');
   if (!startButton) {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// 🔥 Abaixo começa a parte nova: funções para Supabase 🔥
+// Funções para Supabase 
 
 let supabase; // Declaramos aqui primeiro (não inicializa ainda!)
 

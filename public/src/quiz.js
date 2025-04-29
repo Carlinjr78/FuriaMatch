@@ -165,8 +165,8 @@ function falarPergunta() {
     const botaoOuvir = document.getElementById('btn-ouvir-pergunta');
     const botaoParar = document.getElementById('btn-parar-leitura');
 
-    botaoOuvir.classList.add('piscando'); // começa a piscar
-    botaoParar.style.display = 'inline-block'; // mostra botão de parar
+    botaoOuvir.classList.add('piscando'); 
+    botaoParar.style.display = 'inline-block'; 
 
     // Quando terminar de falar, para o piscar e some o botão de parar
     utterance.onend = () => {
