@@ -91,6 +91,10 @@ Acesse o projeto hospedado na Vercel:
 - `@usuario_07`: Foco em Criadores de Conteúdo
 - `@usuario_08`: Foco em Porsche Cup
 
+> ⚠️ **Nota Importante:**  
+> Os perfis **FalleN**, **Neymar**, **Brino**, **Jojo**, **Felipox**, **Caio Castro** e **Mwzera** possuem **mais tags associadas**.  
+> Isso foi feito intencionalmente para aumentar a probabilidade de match com essas personalidades.
+
 ---
 
 
